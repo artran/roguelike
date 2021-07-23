@@ -1,5 +1,5 @@
 use crate::prelude::*;
-use std::cmp::{min, max};
+use std::cmp::{max, min};
 
 const NUM_ROOMS: usize = 20;
 
@@ -26,8 +26,7 @@ impl MapBuilder {
     }
 
     fn fill(&mut self, tile: TileType) {
-        self.map.tiles.iter_mut()
-            .for_each(|t| *t = tile);
+        self.map.tiles.iter_mut().for_each(|t| *t = tile);
     }
 
     fn build_random_rooms(&mut self, rng: &mut RandomNumberGenerator) {

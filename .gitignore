@@ -2,3 +2,4 @@
 /target
 /book_sources
 .DS_Store
+/src/#components.rs#
